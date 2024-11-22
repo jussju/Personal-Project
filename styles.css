@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+  .easy {
+    width: 33%; 
+    background-color: #04AA6D;
+    text-align: left;
+} /* Green */
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1e;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 0 2%;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensures container takes up full width */
+    margin-top: 20px; /* Adds spacing between title and video */
+}
+
+.video-frame {
+    width: 640px; /* Set a fixed width */
+    height: 360px; /* Set a fixed height */
+    max-width: 100%; /* Allows scaling if the screen is smaller */
+}
+
+
+/* Header Styling */
+header {
+    background: linear-gradient(45deg, #333, #555);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    color: #f39c12;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Navbar Styling */
+#navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+/* Section Titles */
+.easy-mode, .hard-mode, .trophies-only {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.easy-mode h1 {
+    color: #04AA6D;
+    font-size: 1.8rem;
+}
+
+.hard-mode h1 {
+    color: #eb2632;
+    font-size: 1.8rem;
+}
+
+
+.trophies-only h1 {
+    color: #eec60a;
+    font-size: 1.8rem;
+}
+
+/* Game Card Styling */
+section {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #f39c12;
+    margin: 10px 0;
+}
+
+/* Lore and Game Info Box */
+.game-block {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100vw;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.game-block h1 {
+    margin-bottom: 10px;
+}
+
+.lore, .comment {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hours {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    height: fit-content;
+}
+
+.score {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.lore p, .hours, .score {
+    color: #f0f0f0;
+}
+
+.hours, .score {
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
